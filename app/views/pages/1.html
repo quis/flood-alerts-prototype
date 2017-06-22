@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Business or residential property
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/">Back</a>
+
+      <h1 class="heading-large">
+        Business or residential property?
+      </h1>
+
+      <form class="form">
+
+        <div class="form-group">
+          <fieldset>
+
+            <legend class="visually-hidden">Where do you live?</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+              <label for="radio-1">Business</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+              <label for="radio-2">Residential</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <a class="button" href="/pages/2">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

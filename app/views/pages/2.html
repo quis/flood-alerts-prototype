@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Postcode
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/pages/1">Back</a>
+
+      <h1 class="heading-large">
+        What is the postcode of the property?
+      </h1>
+
+      <form class="form">
+
+        <div class="form-group">
+          <label class="form-label-bold visually-hidden" for="full-name">Postcode</label>
+          <p class="form-hint">For example SW1A 1AA</p>
+          <input type="text" class="form-control" id="full-name">
+        </div>
+
+        <div class="form-group">
+          <a class="button" href="/pages/3">Continue</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

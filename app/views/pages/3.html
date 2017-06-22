@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Select property
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/pages/2">Back</a>
+
+      <h1 class="heading-large">
+        Select your property
+      </h1>
+
+      {% set properties = [
+        '30 Cheam Road',
+        '30 Cheam Road',
+        '31 Cheam Road',
+        '32 Cheam Road',
+        '33 Cheam Road',
+        '34 Cheam Road',
+        '35 Cheam Road',
+        '36 Cheam Road',
+        '37 Cheam Road',
+        '38 Cheam Road',
+        '39 Cheam Road',
+        '1 Willow Close',
+        'Riverside Cottage, Willow Close'
+      ] %}
+
+      <p>
+        We found {{ properties | length }} properties at this postcode.
+      </p>
+
+      <ul class="list list-bullet">
+        {% for address in [
+          '30 Cheam Road',
+          '30 Cheam Road',
+          '31 Cheam Road',
+          '32 Cheam Road',
+          '33 Cheam Road',
+          '34 Cheam Road',
+          '35 Cheam Road',
+          '36 Cheam Road',
+          '37 Cheam Road',
+          '38 Cheam Road',
+          '39 Cheam Road',
+          '1 Willow Close',
+          'Riverside Cottage, Willow Close'
+        ] %}
+          <li>
+            <a href="/pages/4?property={{ address }}">{{ address }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
