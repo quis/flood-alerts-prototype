@@ -17,19 +17,16 @@
       </h1>
 
       {% set properties = [
-        '30 Cheam Road',
-        '30 Cheam Road',
-        '31 Cheam Road',
-        '32 Cheam Road',
-        '33 Cheam Road',
-        '34 Cheam Road',
-        '35 Cheam Road',
-        '36 Cheam Road',
-        '37 Cheam Road',
-        '38 Cheam Road',
-        '39 Cheam Road',
-        '1 Willow Close',
-        'Riverside Cottage, Willow Close'
+        '300 Creek Road, Greenwich, SE10 9SW',
+        '296 Creek Road, Greenwich, SE10 9SW',
+        '298 Creek Road, Greenwich, SE10 9SW',
+        '302A Creek Road, Greenwich, SE10 9SW',
+        '302B Creek Road, Greenwich, SE10 9SW',
+        '304 Creek Road, Greenwich, SE10 9SW',
+        '306 Creek Road, Greenwich, SE10 9SW',
+        'Nautical House, Creek Road, Greenwich, SE10 9SW',
+        'Flat A 310, Creek Road, Greenwich, SE10 9SW',
+        'Flat B 310, Creek Road, Greenwich, SE10 9SW'
       ] %}
 
       <p>
@@ -37,21 +34,7 @@
       </p>
 
       <ul class="list list-bullet">
-        {% for address in [
-          '30 Cheam Road',
-          '30 Cheam Road',
-          '31 Cheam Road',
-          '32 Cheam Road',
-          '33 Cheam Road',
-          '34 Cheam Road',
-          '35 Cheam Road',
-          '36 Cheam Road',
-          '37 Cheam Road',
-          '38 Cheam Road',
-          '39 Cheam Road',
-          '1 Willow Close',
-          'Riverside Cottage, Willow Close'
-        ] %}
+        {% for address in properties %}
           <li>
             <a href="/pages/4?property={{ address }}">{{ address }}</a>
           </li>
